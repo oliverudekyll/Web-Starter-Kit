@@ -1,16 +1,454 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <title>Title</title>
-    <link rel="stylesheet" href="assets/css/_reset.css">
-    <link rel="stylesheet" href="assets/css/fonts.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>So Called Neutral</title>
+    <link rel="stylesheet" href="assets/css/_reset.css" />
+    <link rel="stylesheet" href="assets/css/fonts.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <div id="interview-close-btn">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="38"
+        height="18"
+        viewBox="0 0 38 18"
+        fill="none"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M20.6738 9.00001L37.2082 1.45488C37.4594 1.34024 37.5702 1.04366 37.4555 0.792434C37.3409 0.541212 37.0443 0.43049 36.7931 0.54513L19.4641 8.45282L1.19939 0.541201C0.945995 0.43144 0.651602 0.547876 0.541842 0.801269C0.432082 1.05466 0.548518 1.34905 0.80191 1.45881L18.2115 9.00001L0.80191 16.5412C0.548518 16.651 0.432082 16.9454 0.541842 17.1987C0.651602 17.4521 0.945995 17.5686 1.19939 17.4588L19.4641 9.54719L36.7931 17.4549C37.0443 17.5695 37.3409 17.4588 37.4555 17.2076C37.5702 16.9564 37.4594 16.6598 37.2082 16.5451L20.6738 9.00001Z"
+          fill="white"
+        />
+      </svg>
+    </div>
+    <div id="graph-overlay">
+      <small class="graph-overlay__definition definition--top">
+        Information</small
+      >
+      <small class="graph-overlay__definition definition--bot">
+        Decoration</small
+      >
+      <small class="graph-overlay__definition definition--left"> Neutral</small>
+      <small class="graph-overlay__definition definition--right">
+        Friction</small
+      >
+      <div class="graph-overlay__graph">
+        <!-- <span id="scroll-circle"></span> -->
+        <div class="graph-overlay__graph__arrowhead--container-vertical">
+          <svg
+            class="graph-overlay__graph__arrowhead"
+            xmlns="http://www.w3.org/2000/svg"
+            width="38"
+            height="10"
+            viewBox="0 0 38 10"
+            fill="none"
+          >
+            <path
+              d="M1 9L19.4688 1L37 9"
+              stroke="white"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path d="M5 1H33" stroke="white" stroke-linecap="round" />
+          </svg>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="38"
+            height="10"
+            viewBox="0 0 38 10"
+            fill="none"
+          >
+            <path
+              d="M37 1L18.5312 9L1 1"
+              stroke="white"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path d="M33 9L5 9" stroke="white" stroke-linecap="round" />
+          </svg>
+        </div>
+        <div class="graph-overlay__graph__arrowhead--container-horizontal">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="10"
+            height="38"
+            viewBox="0 0 10 38"
+            fill="none"
+          >
+            <path
+              d="M9 37L1 18.5312L9 1"
+              stroke="white"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path d="M1 33L1 5" stroke="white" stroke-linecap="round" />
+          </svg>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="10"
+            height="38"
+            viewBox="0 0 10 38"
+            fill="none"
+          >
+            <path
+              d="M1 1L9 19.4688L1 37"
+              stroke="white"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path d="M9 5L9 33" stroke="white" stroke-linecap="round" />
+          </svg>
+        </div>
+        <div class="graph-overlay__graph__line--vertical"></div>
+        <div class="graph-overlay__graph__line--horizontal"></div>
+      </div>
+    </div>
+    <section class="title">
+      <hgroup class="title__hgroup">
+        <h1 class="title__hgroup__header">So<br />Called<br />Neutral</h1>
+        <h2 class="title__hgroup__subheader">
+          A series of interviews by <br />
+          JULIE HÉNEAULT
+        </h2>
+      </hgroup>
+    </section>
+    <section class="title">
+      <hgroup class="title__hgroup">
+        <h1 class="title__hgroup__header--interview" data-interview="rwo">
+          Rietlanden <br />
+          Women's
+          <!-- <br /> -->
+          Office
+        </h1>
+        <h2 class="title__hgroup__subheader">
+          Interview #1 with <br />
+          JOHANNA EHDE & ELISABETH RAFSTEDT
+        </h2>
+      </hgroup>
+    </section>
+    <section id="rwo" class="interview">
+      <div class="interview__segment">
+        <div class="interview__segment__column" data-person="jh">
+          <p class="interview__segment__column__p">
+            Thank you so much for joining us today. I'm very-very glad to start
+            this series of lectures with you two. So I've introduced the
+            assignment already and the project to the students, it's a question
+            revolving around the term neutrality in the field of graphic design,
+            which I believe is a term that can be put in perspective,
+            questioned, or criticized.
+          </p>
+          <p class="interview__segment__column__p">
+            I'm gonna read a biography of you and your practice and what I
+            propose is that either we exchange on a question-answer mode or you
+            present and then we ask questions.
+          </p>
+        </div>
+      </div>
+      <div class="interview__segment">
+        <div class="interview__segment__column" data-person="je">
+          <p class="interview__segment__column__p">Yes.</p>
+        </div>
+      </div>
+      <div class="interview__segment">
+        <div class="interview__segment__column" data-person="jh">
+          <p class="interview__segment__column__p">Which mode do you prefer?</p>
+        </div>
+      </div>
+      <div class="interview__segment">
+        <div class="interview__segment__column" data-person="je">
+          <p class="interview__segment__column__p">
+            Yeah, we were going to ask you the same.
+          </p>
+          <p class="interview__segment__column__p">
+            We're really interested to have a discussion with you but also we
+            could give you a kind of quick and dense presentation of our work.
+            It's either or, I mean, you know, we can go straight in questions
+            also.
+          </p>
+        </div>
+      </div>
+      <div class="interview__segment">
+        <div class="interview__segment__column" data-person="er">
+          <p class="interview__segment__column__p">
+            We think, like we have a presentation that we can give that is
+            between 20 minutes to half an hour, something like that.
+          </p>
+        </div>
+      </div>
+      <div class="interview__segment">
+        <div class="interview__segment__column" data-person="je">
+          <p class="interview__segment__column__p">
+            Maybe it's shorter. Yeah, 20, I think.
+          </p>
+        </div>
+      </div>
+      <div class="interview__segment">
+        <div class="interview__segment__column" data-person="er">
+          <p class="interview__segment__column__p">Yeah.</p>
+        </div>
+      </div>
+      <div class="interview__segment">
+        <div class="interview__segment__column" data-person="jh">
+          <p class="interview__segment__column__p">
+            Sounds perfect! Then I will read your bio and then maybe start with
+            the first question, which will then I'm sure evolve into your
+            presentation, right?.
+          </p>
+        </div>
+      </div>
+      <div class="interview__segment">
+        <div class="interview__segment__column" data-person="je">
+          <p class="interview__segment__column__p">Yeah. Perfect.</p>
+        </div>
+      </div>
+      <div class="interview__segment">
+        <div class="interview__segment__column" data-person="jh">
+          <p class="interview__segment__column__p">
+            So correct me if I'm wrong with the bio, I copied it from somewhere.
+            You let me know if there are some updates in between.
+          </p>
+          <p class="interview__segment__column__p">
+            So, graphic designers Elizabeth Rafstedt and Johanna Ehde form
+            Rietlanden Women's Office. Their practice is interested in current
+            and historical issues connected to reproductive work and
+            collaborative graphic design. The basis of their work is a printed
+            publication series called MsHeresies that we have here that the
+            students looked at already. Inquiry into collaborative graphic
+            design practices and the ornament as a form of work critique and the
+            ornament sits at the center of their practice, where they consider
+            ornaments not simply as added decoration but as traces of the
+            specific conditions under which a work was made. They look at the
+            traces of reproductive work, such as lines of alteration and
+            correction, flashing elements, improvise type, manifestations of
+            urgency, become the ornaments which makes social relations legible.
+            The search for ornaments, disruptive, diffuse and aesthetic
+            qualities, and sketch the ornament as a point where aesthetics and
+            politics intertwine.
+          </p>
+          <p class="interview__segment__column__p">
+            I hope that was up to date.
+          </p>
+        </div>
+      </div>
+      <div class="interview__segment">
+        <div class="interview__segment__column" data-person="je">
+          <p class="interview__segment__column__p">For sure.</p>
+        </div>
+      </div>
+      <div class="interview__segment">
+        <div class="interview__segment__column" data-person="er">
+          <p class="interview__segment__column__p">Yeah.</p>
+        </div>
+      </div>
+
+      <div class="interview__segment">
+        <div class="interview__segment__column" data-person="jh">
+          <p class="interview__segment__column__p">
+            Maybe we can start this presentation by you presenting yourselves,
+            maybe, and now we had a bit of a glimpse into your practice, but
+            what we're curious to hear is well, firstly who you are, how your
+            collaboration works and maybe you can start talking about
+            MsHeresies.
+          </p>
+        </div>
+      </div>
+
+      <div class="interview__segment">
+        <div class="interview__segment__column" data-person="je">
+          <p class="interview__segment__column__p">Yeah, thank you!</p>
+        </div>
+      </div>
+
+      <div class="interview__segment">
+        <div class="interview__segment__column" data-person="jh">
+          <p class="interview__segment__column__p">
+            Great, now I'll turn this [camera] around.
+          </p>
+        </div>
+      </div>
+
+      <div class="interview__segment">
+        <div class="interview__segment__column" data-person="je">
+          <p class="interview__segment__column__p">
+            Also, I am Johanna, and this is Elizabeth. We're really happy to see
+            that you're in a space together and not just on your own laptop.
+            It’s very nice
+          </p>
+        </div>
+      </div>
+
+      <div class="interview__segment">
+        <div class="interview__segment__column" data-person="er">
+          <p class="interview__segment__column__p">
+            Yeah, and it's so nice also when you have this online lecture that
+            you actually see someone and at the same time, so that's super nice.
+          </p>
+        </div>
+      </div>
+
+      <div class="interview__segment">
+        <div class="interview__segment__column" data-person="je">
+          <p class="interview__segment__column__p">
+            Can we show you a slide show actually?
+          </p>
+        </div>
+      </div>
+
+      <div class="interview__segment">
+        <div class="interview__segment__column" data-person="jh">
+          <p class="interview__segment__column__p">Yeah, of course.</p>
+        </div>
+      </div>
+
+      <div class="interview__segment">
+        <div class="interview__segment__column" data-person="je">
+          <p class="interview__segment__column__p">Okay, share.</p>
+        </div>
+      </div>
+
+      <div class="interview__segment">
+        <div class="interview__segment__column" data-person="er">
+          <p class="interview__segment__column__p">
+            We are in our studio now in Amsterdam and here is a picture
+            <img
+              class="interview__segment__column__img"
+              src="assets/images/rwo-1.png"
+            />
+            also from our studio a couple of weeks ago.
+          </p>
+        </div>
+      </div>
+
+      <div class="interview__segment">
+        <div class="interview__segment__column" data-person="je">
+          <p class="interview__segment__column__p">
+            Do you see the slideshow now?
+          </p>
+        </div>
+      </div>
+
+      <div class="interview__segment">
+        <div class="interview__segment__column" data-person="jh">
+          <p class="interview__segment__column__p">Yes, we do.</p>
+        </div>
+      </div>
+
+      <div class="interview__segment">
+        <div class="interview__segment__column" data-person="er">
+          <p class="interview__segment__column__p">
+            Great. We thought of this- By the way, do you see us as well at the
+            same time or?
+          </p>
+        </div>
+      </div>
+
+      <div class="interview__segment">
+        <div class="interview__segment__column" data-person="jh">
+          <p class="interview__segment__column__p">Yeah, we can see both.</p>
+        </div>
+      </div>
+
+      <div class="interview__segment">
+        <div class="interview__segment__column" data-person="er">
+          <p class="interview__segment__column__p">
+            Okay, so we thought of this, when you came with this topic of the
+            neutral and the connection to neutrality and graphic design. We also
+            wanted to start here in our studio because it was sharing space
+            together that made us form a group after our studies.
+          </p>
+        </div>
+      </div>
+
+      <div class="interview__segment">
+        <div class="interview__segment__column" data-person="je">
+          <p class="interview__segment__column__p">
+            I mean, I think we were very intrigued by this. The word neutral is
+            very key right now to us also like, what is happening with our work
+            at the moment.
+          </p>
+        </div>
+      </div>
+
+      <div class="interview__segment">
+        <div class="interview__segment__column" data-person="er">
+          <p class="interview__segment__column__p">
+            Basically, maybe this introduction to our work, we can start with
+            the work and then we can speak a little bit more about why we have
+            chosen to have a collective practice. But what you can see on the
+            screen now is a poster
+            <img
+              class="interview__segment__column__img"
+              src="assets/images/rwo-2.png"
+              alt=""
+            />
+            that was supposed to be shown in Leipzig at the modern Museum of Art
+            there at this very moment, in connection to the book, the Buchmesse,
+            the book fair in Leipzig that they have there yearly. And it is a
+            republishing of a Palestinian poet and her name is Hila Abunnada and
+            she was murdered, she was killed during the bombings of her home in
+            Gaza. The text comes from a publishing platform that you should
+            really look up—GazaPassages.org—and it's a publishing project called
+            Passages Through Genocide. And they asked for everyone to republish
+            and distribute the work from these Palestinian poets. On this poster
+            it reads from the 8th of October last year. It reads, and this is
+            Hila Abunnada, the writer, she wrote "Our news feeds of funeral
+            homes, memorial services, obituary pages, we move from page to page
+            as if walking through a square full of funerals packed side-by-side.
+            God, the weight of these days." And this poster is not shown in
+            Leipzig now because it is not neutral.
+          </p>
+        </div>
+      </div>
+
+      <footer class="interview__footer">
+        <!--         <small class="interview__footer__small"
+          >Johanna Ehde & Elisabeth Rafstedt interviewed by Julie Héneault on
+          the 25th of March, via video call.</small
+        > -->
+        <small class="interview__footer__small">
+          <time datetime="2024-03-24"> 25.03.2024 </time>
+        </small>
+      </footer>
+    </section>
+
+    <section class="title">
+      <hgroup class="title__hgroup">
+        <h1 class="title__hgroup__header--interview">
+          Diorama
+          <!-- <br /> -->
+          Type <br />
+          Partners
+        </h1>
+        <h2 class="title__hgroup__subheader">
+          Interview #2 with <br />
+          MARIE-MAM SAI BELLIER
+        </h2>
+      </hgroup>
+    </section>
+    <section class="title">
+      <hgroup class="title__hgroup">
+        <h1 class="title__hgroup__header--interview">
+          Velvetyne <br />
+          Type
+          <!-- <br /> -->
+          Foundry
+        </h1>
+        <h2 class="title__hgroup__subheader">
+          Interview #3 with <br />
+          RAPHAËL BASTIDE & QUENTIN JUHEL
+        </h2>
+      </hgroup>
+    </section>
     <script type="module" src="assets/js/index.js"></script>
   </body>
 </html>
